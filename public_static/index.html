@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login</title>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="jquery.js"></script>
+    <script src="client.js"></script>
+</head>
+<body>
+<div id="first">
+    <span><h1>UnsecureChat</h1></span>
+    <input id="name" type="text">
+    <button id="enterchat">enter name to chat</button>
+</div>
+<div id="second">
+    <span><h1>UnsecureChat</h1></span>
+    <input type="text" id="newmsg">
+    <button id="sendmsg">Send</button>
+    <button id="see">See Who is Online</button>
+    <button id="logout">LogOut</button>
+    <ul id="msglist">
+
+    </ul>
+</div>
+<div id="third">
+    <button id="back">go back</button>
+    <ul id="online">
+
+    </ul>
+</div>
+</body>
+</html>
