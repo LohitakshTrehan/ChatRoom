@@ -5,5 +5,5 @@ To send private chat use @username in begining of message
 (IMP: Persons with same username can exist, it was intentionally done,
       and yes private message will be recieved by both of them)
 This is alpha version and gui will be added in upcomming updates.    
-Feel free to contribute the UI and Security (Read my code security is seriously flawed here :p ).
+Feel free to contribute the UI and Security (Read my code, security is seriously flawed here :p ).
 
