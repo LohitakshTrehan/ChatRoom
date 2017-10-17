@@ -3,31 +3,37 @@
 <head>
     <meta charset="UTF-8">
     <title>Login</title>
-    <script src="/socket.io/socket.io.js"></script>
-    <script src="jquery.js"></script>
-    <script src="client.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+    <link rel="stylesheet" href="main.css"/>
 </head>
 <body>
-<div id="first">
-    <span><h1>UnsecureChat</h1></span>
-    <input id="name" type="text">
-    <button id="enterchat">enter name to chat</button>
-</div>
-<div id="second">
-    <span><h1>UnsecureChat</h1></span>
-    <input type="text" id="newmsg">
-    <button id="sendmsg">Send</button>
-    <button id="see">See Who is Online</button>
-    <button id="logout">LogOut</button>
-    <ul id="msglist">
+<div class="container">
+    <div id="first">
+        <span><h1>UnsecureChat</h1></span>
+        <input id="name" type="text">
+        <button class="btn btn-primary" id="enterchat">enter name to chat</button>
+    </div>
+    <div id="second" class="chat">
+        <span><h1>UnsecureChat</h1></span>
+        <input class="chat_input" type="text" id="newmsg">
+        <div class="chat_buttons">
+            <button class="btn btn-primary" id="sendmsg">Send</button>
+            <button class="btn btn-outline-primary" id="see">See Who is Online</button>
+            <button class="btn btn-outline-primary" id="logout">LogOut</button>
+        </div>
+        <ul class="chat_main" id="msglist">
 
-    </ul>
-</div>
-<div id="third">
-    <button id="back">go back</button>
-    <ul id="online">
+        </ul>
+    </div>
+    <div id="third">
+        <button class="btn btn-outline-primary" id="back">go back</button>
+        <ul id="online">
 
-    </ul>
+        </ul>
+    </div>
 </div>
+<script src="/socket.io/socket.io.js"></script>
+<script src="jquery.js"></script>
+<script src="client.js"></script>
 </body>
 </html>

@@ -1,0 +1,25 @@
+h1 {
+    text-align: center;
+}
+.chat_input {
+    width: 100%;
+}
+.chat_buttons {
+    margin-top: 3px;
+    display: flex;
+    justify-content: flex-end;
+}
+.chat_buttons button {
+    margin-left: 2px;
+}
+.chat_main {
+    min-height: 400px;
+    padding: 20px;
+    border: 1px solid #868e96;
+    border-radius: 6px;
+    margin-top: 10px;
+    list-style-type: none;
+}
+button {
+    cursor: pointer;
+}
