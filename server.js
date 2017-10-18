@@ -91,6 +91,6 @@ io.on('connection', (socket) => {
 })
 
 
-server.listen(1111, function () {
+server.listen(1111, function () {   // USE git process.env.PORT instead of 1111 before dreploying to heroku
     console.log("Server started on http://localhost:1111");
 });
